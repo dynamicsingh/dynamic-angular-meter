@@ -1,0 +1,16 @@
+﻿<div id="dynamic-meter">
+    <svg viewBox="-50 25 500 200" class="svg-content" xmlns="http://www.w3.org/2000/svg">
+        <g>
+            <animate attributeType="CSS" attributeName="opacity" from="0" to="1" dur="3s" />
+            <path class="arc" id="dynamic-arc1" d="" />
+            <path class="arc" id="dynamic-arc2" d="" />
+            <path class="arc" id="dynamic-arc3" d="" />
+            <path class="arc" id="dynamic-arc4" d="" />
+            <path class="arc" id="dynamic-arc5" d="" />
+            <g class="needleset" width="150">
+                <path d="M 200 195 L 90 200 L 200 205"></path>
+            </g>
+            <text x="190" y="220" fill="black" ng-show="showScore==true">{{score}}</text>
+        </g>
+    </svg>
+</div>

@@ -1,0 +1,31 @@
+{
+  "name": "dynamic-meter-gauge",
+  "version":"1.0",
+  "description": "An Angular JS directive for meter or gauge made up of svg meter and needle",
+  "dependencies": {
+    "angular": "~1.3.0"
+  },
+  "main": [
+    "js/DynamicMeter.js",
+    "css/DynamicMeterStyle.css"
+  ],
+  "keywords": [
+    "svg",
+    "meter",
+    "gauge",
+    "module",
+    "dynamic",
+    "bhupinder",
+    "angular module",
+    "angular"
+  ],
+  "authors": [
+    "Bhupinder Singh <bhupindersingh@dutchmail.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynamicsingh/DynamicMeterGauge.git"
+  },
+  "private": false
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>Dynamic Meter</title>
+    <!--link the stylesheet-->
+    <link rel="stylesheet" href="../css/DynamicMeterStyle.css" />
+    <!--include jquery and angularJS from CDN-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+    <!--link the javascript file-->
+
+
+
+
+</head>
+
+<body>
+<div id="DynamicMeterContainer" ng-controller="demoCtrl">
+
+    <!--custom tag to invoke the dynamic meter-->
+    <dynamic-meter ng-model="dynamicScore" show-score="true"></dynamic-meter>
+
+    <!--input to change the dynamic score value for testing-->
+    <div id="scoreReader">
+        Dynamic Meter<br />
+        0<input id="txtScore" type="range" min="0" max="100" ng-model="dynamicScore" placeholder="enter the dynamic score" />100
+    </div>
+</div>
+</body>
+
+<script src="../js/DynamicMeter.js"></script>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,76 @@
+﻿
+body {
+    font-family: 'Trebuchet MS';
+}
+
+/* SVG style */
+
+#dynamic-meter svg {
+    /*border: 1px solid #ccc;*/
+    /*border-radius: 4px;*/
+}
+
+/* Input section */
+
+#scoreReader {
+    width: 35%;
+    background: #dfdfdc;
+    margin: auto;
+    border-radius: 3px;
+    padding: 3px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+#scoreReader input {
+    border: none;
+    border-radius: 3px;
+    width: 80%;
+    height: 25px;
+    font-size: 25px;
+}
+
+/* Needle of the meter */
+
+#dynamic-meter .needle,#dynamic-meter  .needle-center {
+    fill: #808080;
+}
+#dynamic-meter .needleset {
+    -webkit-transition: All 3s ease-in-out;
+    -moz-transition: All 3s ease-in-out;
+    -o-transition: All 3s ease-in-out;
+}
+#dynamic-meter .needle-pointer {
+    fill: #fff;
+    stroke-width: 5px;
+    z-index: 2;
+}
+
+/* Each arc in the meter */
+
+#dynamic-meter .arc {
+    fill: none;
+    stroke-width: 30px;
+}
+#dynamic-meter #dynamic-arc1 {
+    stroke: #f12828;
+}
+#dynamic-meter #dynamic-arc2 {
+    stroke: #ff6a00;
+}
+#dynamic-meter #dynamic-arc3 {
+    stroke: #ffd800;
+}
+#dynamic-meter #dynamic-arc4 {
+    stroke: #83e043;
+}
+#dynamic-meter #dynamic-arc5 {
+    stroke: #099f51;
+}
+
+/* For the score inside circle */
+
+#dynamic-meter .scoreInCircle {
+    -webkit-transition: All 3s ease;
+    -moz-transition: All 3s ease;
+    -o-transition: All 3s ease;
+}
